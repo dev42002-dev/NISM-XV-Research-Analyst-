@@ -1,0 +1,6 @@
+{
+  "name": "NISM Series XV Research Analyst Practice Test",
+  "description": "Comprehensive 80-question practice test and detailed solution analyzer for the NISM Series XV Research Analyst Certification Examination based on the February 2026 workbook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
