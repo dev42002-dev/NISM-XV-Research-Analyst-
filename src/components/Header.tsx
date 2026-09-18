@@ -28,25 +28,26 @@ export const Header: React.FC<HeaderProps> = ({
                 onGoHome();
               }
             }}
-            className="flex items-center gap-2.5 sm:gap-3 min-w-0 cursor-pointer group select-none"
+            className="flex items-center gap-2 sm:gap-3 min-w-0 cursor-pointer group select-none"
             role="button"
             tabIndex={0}
             title="Return to Home"
           >
-            <div className="h-8 w-8 sm:h-9 sm:w-9 rounded-lg bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 group-hover:bg-emerald-500/25 transition-colors">
-              <BookOpen className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+            <div className="h-7 w-7 sm:h-9 sm:w-9 rounded-md sm:rounded-lg bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 group-hover:bg-emerald-500/25 transition-colors">
+              <BookOpen className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5" />
             </div>
             <div className="min-w-0">
-              <div className="flex items-center gap-1.5 flex-wrap">
-                <span className="text-[9px] sm:text-xs font-bold tracking-wider text-emerald-400 uppercase bg-emerald-950/90 px-1.5 sm:px-2 py-0.5 rounded border border-emerald-800/70 shrink-0">
+              <div className="flex items-center gap-1.5">
+                <span className="text-[10px] sm:text-xs font-bold tracking-wider text-emerald-400 uppercase leading-none">
                   NISM SERIES XV
                 </span>
-                <span className="text-[10px] sm:text-xs text-slate-400 hidden sm:inline truncate">
+                <span className="text-[10px] sm:text-xs text-slate-400 hidden sm:inline">
                   • Feb 2026 Edition
                 </span>
               </div>
-              <h1 className="text-sm sm:text-base md:text-lg font-bold text-white tracking-tight leading-tight truncate group-hover:text-emerald-300 transition-colors">
-                RESEARCH ANALYST PRACTICE TEST
+              <h1 className="text-[15px] sm:text-base md:text-lg font-bold text-white tracking-tight leading-tight mt-0.5 whitespace-nowrap group-hover:text-emerald-300 transition-colors">
+                <span className="sm:hidden">Research Analyst</span>
+                <span className="hidden sm:inline">RESEARCH ANALYST PRACTICE TEST</span>
               </h1>
             </div>
           </div>
@@ -75,7 +76,7 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
 
             {isAdvancedUnlocked ? (
-              <div className="flex items-center gap-1.5 bg-emerald-500/15 text-emerald-400 text-xs font-bold px-2.5 sm:px-3 py-2 rounded-lg border border-emerald-500/30 min-h-[40px] sm:min-h-[44px]">
+              <div className="flex items-center gap-1.5 bg-emerald-500/15 text-emerald-400 text-xs font-bold px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-emerald-500/30 min-h-[36px] sm:min-h-[44px]">
                 <ShieldCheck className="w-4 h-4 shrink-0" />
                 <span className="hidden sm:inline">✓ ADVANCED UNLOCKED</span>
                 <span className="sm:hidden text-xs">✓ Unlocked</span>
@@ -84,11 +85,12 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={onOpenUnlockModal}
-                className="flex items-center gap-1.5 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 text-xs font-bold px-3 sm:px-3.5 py-2 rounded-lg border border-amber-500/40 transition-colors cursor-pointer min-h-[40px] sm:min-h-[44px] shadow-2xs"
+                className="flex items-center gap-1.5 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 text-xs font-bold px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-lg border border-amber-500/40 transition-colors cursor-pointer min-h-[36px] sm:min-h-[44px] shadow-2xs"
                 title="Unlock Advanced 40 Questions"
               >
                 <Lock className="w-3.5 h-3.5 shrink-0" />
-                <span className="whitespace-nowrap">UNLOCK ADVANCED 40</span>
+                <span className="hidden sm:inline whitespace-nowrap">UNLOCK ADVANCED 40</span>
+                <span className="sm:hidden whitespace-nowrap text-xs">Unlock 40</span>
               </button>
             )}
           </div>

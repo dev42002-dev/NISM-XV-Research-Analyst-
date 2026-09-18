@@ -56,7 +56,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       {/* Question Content */}
       <div className="p-4 sm:p-5 lg:py-3.5 lg:px-5 xl:py-4 xl:px-6 flex-1">
         {/* Question Text */}
-        <h2 className="text-base sm:text-[17px] lg:text-[16px] xl:text-[17px] font-semibold text-slate-900 leading-snug sm:leading-snug lg:leading-normal mb-3 sm:mb-3.5 lg:mb-3 break-words">
+        <h2 className="text-[18px] sm:text-[18px] lg:text-[16px] xl:text-[17px] font-semibold text-slate-900 leading-snug mb-3 sm:mb-3.5 lg:mb-3 break-words">
           {question.question}
         </h2>
 
@@ -70,7 +70,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 key={key}
                 type="button"
                 onClick={() => onSelectOption(key)}
-                className={`w-full p-3.5 sm:py-3 sm:px-4 lg:py-2.5 lg:px-3.5 rounded-xl border text-left transition-all flex items-start gap-2.5 sm:gap-3 cursor-pointer select-none min-h-[50px] sm:min-h-[54px] lg:min-h-[56px] xl:min-h-[58px] ${
+                className={`w-full p-3.5 sm:py-3.5 sm:px-4 lg:py-2.5 lg:px-3.5 rounded-xl border text-left transition-all flex items-start gap-2.5 sm:gap-3 cursor-pointer select-none min-h-[52px] sm:min-h-[54px] lg:min-h-[56px] xl:min-h-[58px] ${
                   isSelected
                     ? 'bg-slate-900 text-white border-slate-900 shadow-sm ring-2 ring-slate-900/10'
                     : 'bg-white hover:bg-slate-50/90 text-slate-800 border-slate-200 hover:border-slate-300'
@@ -90,7 +90,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 </span>
 
                 {/* Option Text */}
-                <div className="flex-1 text-sm sm:text-[15px] lg:text-[15px] xl:text-base leading-snug sm:leading-normal break-words pt-0.5">
+                <div className="flex-1 text-[16px] sm:text-[16px] lg:text-[15px] xl:text-base leading-snug break-words pt-0.5">
                   {question.options[key]}
                 </div>
 

@@ -8,12 +8,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "A manufacturing company reports a 35% growth in EBITDA and a 28% increase in reported Net Profit over the fiscal year. However, its Cash Flow from Operations (CFO) has turned negative. An equity research analyst reviews the notes to accounts and working capital schedule. Which of the following is the most appropriate financial interpretation?",
+    question: "A manufacturing firm reports 35% EBITDA growth and 28% Net Profit growth, but Cash Flow from Operations (CFO) turns negative. Which financial interpretation is most appropriate?",
     options: {
-      A: "The divergence highlights deteriorating earnings quality caused by aggressive revenue booking and significant working capital lockup in uncollected receivables and unsold inventory.",
-      B: "The divergence confirms operational efficiency because high operating profit margins naturally create short-term timing lags in customer collections and vendor payments.",
-      C: "The negative operating cash flow is an expected non-cash phenomenon because depreciation and amortization are added back during cash flow statement preparation.",
-      D: "The decline in operating cash flow indicates that the company is funding long-term property, plant, and equipment purchases directly out of operating activities."
+      A: "The divergence signals weaker earnings quality due to aggressive revenue recognition and working-capital buildup.",
+      B: "The divergence confirms operational efficiency as margins create normal collection lags.",
+      C: "Negative operating cash flow is an expected non-cash effect of depreciation add-backs.",
+      D: "The drop indicates the firm funds long-term capex directly out of operating activities."
     },
     correctAnswer: "A",
     explanation: "Under financial statement analysis, a persistent or sudden divergence where operating profit/EBITDA rises sharply while Cash Flow from Operations (CFO) deteriorates or turns negative is a primary red flag of deteriorating earnings quality. This often stems from aggressive accrual-based revenue recognition, elongation of Days Sales Outstanding (DSO), bloated inventories, or unbilled revenues.",
@@ -31,7 +31,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 3, // Medium
     access: "free",
-    question: "Company Apex Ltd has 50 million diluted equity shares outstanding trading at ₹420 per share. Its balance sheet shows total long-term and short-term interest-bearing debt of ₹8,000 million, cash and liquid cash equivalents of ₹2,500 million, minority interest of ₹500 million, and investments in associate companies worth ₹1,000 million. What is the Enterprise Value (EV) of Apex Ltd?",
+    question: "Apex Ltd has 50M shares at ₹420, debt of ₹8,000M, cash of ₹2,500M, minority interest of ₹500M, and associates of ₹1,000M. What is Enterprise Value (EV)?",
     options: {
       A: "₹27,000 million",
       B: "₹26,000 million",
@@ -54,12 +54,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "Under Regulation 16 of the SEBI (Research Analysts) Regulations, 2014, which of the following restrictions applies to personal trading in securities by a research analyst or research entity regarding a subject company they cover?",
+    question: "Under Regulation 16 of SEBI RA Regulations, 2014, what personal trading restrictions apply to an analyst covering a subject company?",
     options: {
-      A: "They cannot trade in securities of the subject company within 15 days before and 15 days after the publication of a research report.",
-      B: "They cannot trade in securities of the subject company within 60 days before and 30 days after the publication of a research report.",
-      C: "They cannot trade in securities of the subject company within 30 days before and 5 days after the publication of a research report.",
-      D: "They cannot trade in securities of the subject company within 45 days before and 10 days after the publication of a research report."
+      A: "No trading within 15 days before and 15 days after publishing a research report.",
+      B: "No trading within 60 days before and 30 days after publishing a research report.",
+      C: "No trading within 30 days before and 5 days after publishing a research report.",
+      D: "No trading within 45 days before and 10 days after publishing a research report."
     },
     correctAnswer: "C",
     explanation: "Under Regulation 16(2) of SEBI (Research Analysts) Regulations, 2014: Personal trading or trading on behalf of clients by individuals employed as research analysts or research entities in securities of the subject company is strictly prohibited within 30 days prior to the publication of a research report and within 5 days after the publication of a research report.",
@@ -77,12 +77,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "In technical trend analysis, a 'Golden Cross' occurs when a shorter-term moving average crosses above a longer-term moving average (e.g., 50-day EMA crossing above 200-day EMA). According to Dow Theory and trend confirmation principles, how should an analyst interpret this signal?",
+    question: "In technical analysis, a 'Golden Cross' occurs when a 50-day EMA crosses above a 200-day EMA. How should an analyst interpret this signal?",
     options: {
-      A: "An immediate, definitive buy signal that guarantees an uninterrupted multi-month bullish trend regardless of volume.",
-      B: "A short-term mean-reversion sell signal indicating that the asset has entered extreme overbought territory.",
-      C: "A leading indicator that anticipates macroeconomic turns before they appear in corporate quarterly reports.",
-      D: "A lagging confirmation of an established primary uptrend that requires supporting volume and broader market breadth to validate."
+      A: "A definitive buy signal guaranteeing a multi-month bull trend regardless of volume.",
+      B: "A short-term mean-reversion sell signal indicating extreme overbought conditions.",
+      C: "A leading indicator that anticipates macroeconomic turns before earnings appear.",
+      D: "A lagging confirmation of a primary uptrend requiring volume and market breadth."
     },
     correctAnswer: "D",
     explanation: "Moving averages are trend-following lagging indicators derived from historical price data. A Golden Cross (50-day moving average rising above the 200-day moving average) confirms that medium-term upward momentum has overtaken long-term trend resistance. Under Dow Theory, volume must expand in the direction of the primary trend, and signals should be confirmed across related market indices.",
@@ -100,12 +100,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "When an equity research analyst transitions from a Free Cash Flow to Firm (FCFF) DCF model to a Free Cash Flow to Equity (FCFE) DCF model, which of the following methodological adjustments is REQUIRED to determine the intrinsic value per equity share?",
+    question: "When transitioning from an FCFF model to an FCFE model, which adjustment is REQUIRED to determine intrinsic equity value per share?",
     options: {
-      A: "Discount FCFF at WACC to derive Enterprise Value, then subtract net debt to obtain Equity Value; discount FCFE directly at the Cost of Equity to arrive directly at Equity Value.",
-      B: "Discount FCFF at the Cost of Equity to derive Enterprise Value, then add preferred stock; discount FCFE at the pre-tax Cost of Debt to arrive at Net Asset Value.",
-      C: "Discount FCFF at the Risk-Free Rate to derive Enterprise Value, then subtract statutory reserves; discount FCFE at WACC to derive Equity Value.",
-      D: "Discount FCFF at the marginal post-tax Cost of Debt to obtain firm value; discount FCFE at the expected nominal GDP growth rate to determine equity value."
+      A: "Discount FCFF at WACC and deduct net debt; discount FCFE at Cost of Equity directly to Equity Value.",
+      B: "Discount FCFF at Cost of Equity; discount FCFE at pre-tax Cost of Debt.",
+      C: "Discount FCFF at Risk-Free Rate; discount FCFE at WACC to derive Equity Value.",
+      D: "Discount FCFF at post-tax Cost of Debt; discount FCFE at nominal GDP growth rate."
     },
     correctAnswer: "A",
     explanation: "In valuation methodology: FCFF represents cash available to all providers of capital (debt holders + equity holders) and must be discounted at WACC to calculate Enterprise Value. To reach Equity Value, net debt, preferred stock, and minority interest must be deducted. Conversely, FCFE represents cash available purely to equity shareholders after debt servicing and net borrowings, and must be discounted at the Cost of Equity (Ke) to yield Equity Value directly.",
@@ -123,7 +123,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Risk and Return",
     difficulty: 4, // Hard
     access: "free",
-    question: "A stock has a beta of 1.4. The risk-free rate of return is 6.5% and the expected return on the broader market index is 14.5%. According to the Capital Asset Pricing Model (CAPM), what is the required rate of return on this stock?",
+    question: "A stock has a beta of 1.4. The risk-free rate is 6.5% and expected market return is 14.5%. Under CAPM, what is the required rate of return?",
     options: {
       A: "18.30%",
       B: "17.70%",
@@ -146,12 +146,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Industry Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "In Michael Porter's Five Forces framework, which of the following industry configurations creates the GREATEST pricing power and highest sustained profitability for incumbent firms?",
+    question: "In Porter's Five Forces, which industry structure yields the GREATEST pricing power and sustained profitability for incumbents?",
     options: {
-      A: "High bargaining power of buyers, low barriers to entry, numerous small suppliers, and high availability of close substitutes.",
-      B: "Highly standardized commodity product, zero switching costs for customers, excess industry manufacturing capacity, and high fixed costs.",
-      C: "High capital entry barriers, high customer switching costs, fragmented non-unionized suppliers, and limited viable substitute products.",
-      D: "Pure price competition among fragmented competitors with low industry concentration and negligible patent protections."
+      A: "High buyer power, low entry barriers, many suppliers, and abundant substitutes.",
+      B: "Standardized commodity products, zero switching costs, and high fixed costs.",
+      C: "High capital entry barriers, high switching costs, fragmented suppliers, and few substitutes.",
+      D: "Pure price competition among fragmented rivals with negligible patent protection."
     },
     correctAnswer: "C",
     explanation: "Under Porter's Five Forces, incumbent pricing power and sustained economic profits are maximized when barriers to entry are high (protecting against new entrants), threat of substitutes is low, buyer switching costs are high (reducing buyer power), supplier power is weak, and competitive rivalry is restrained.",
@@ -169,12 +169,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "A stock's daily chart shows the price making a series of Higher Highs over a 6-week rally, while the 14-day Relative Strength Index (RSI) makes a series of Lower Highs below the 70 level. How should a technical research analyst interpret this technical divergence?",
+    question: "A stock prints higher highs over a 6-week rally while the 14-day RSI prints lower highs below 70. How should an analyst interpret this divergence?",
     options: {
-      A: "A hidden bullish divergence signaling aggressive institutional accumulation and an impending parabolic upward breakout.",
-      B: "An immediate continuation signal confirming that the primary bull trend is gaining accelerating momentum.",
-      C: "An indicator calculation anomaly caused by high volume that should be disregarded in trending markets.",
-      D: "A classic bearish divergence indicating weakening upward momentum and an increasing probability of a trend exhaustion or pullback."
+      A: "Hidden bullish divergence signaling institutional accumulation and a breakout.",
+      B: "Immediate continuation signal confirming accelerating bull momentum.",
+      C: "Indicator calculation anomaly that should be disregarded in trending markets.",
+      D: "Classic bearish divergence signaling weakening upward momentum and correction risk."
     },
     correctAnswer: "D",
     explanation: "A classic (regular) bearish divergence occurs when price registers higher highs while the momentum oscillator (such as 14-period RSI) forms lower highs. This discrepancy demonstrates that internal upward momentum is waning despite higher nominal prices, signaling that buying pressure is exhausting and warning of an impending reversal or consolidation.",
@@ -192,7 +192,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "Company Beta Ltd reports: Net Profit Margin = 8%, Asset Turnover Ratio = 1.5, and Equity Multiplier (Financial Leverage) = 2.0. If the company's net profit margin improves to 10% next year, but its asset turnover declines to 1.2 and its equity multiplier drops to 1.75, what happens to Beta Ltd's Return on Equity (ROE)?",
+    question: "Beta Ltd reports: Net Margin = 8%, Asset Turnover = 1.5, Leverage = 2.0. If Net Margin rises to 10%, Turnover falls to 1.2, and Leverage drops to 1.75, what happens to ROE?",
     options: {
       A: "ROE decreases from 24.0% to 21.0%",
       B: "ROE remains constant at 24.0%",
@@ -215,7 +215,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 4, // Hard
     access: "free",
-    question: "Under SEBI (Research Analysts) Regulations, 2014, a research analyst or research entity must disclose whether they or their associates hold a financial interest in the subject company. At what threshold is disclosure of actual/beneficial ownership of equity securities mandatory as of the end of the month immediately preceding the date of publication of the research report?",
+    question: "Under SEBI RA Regulations, 2014, at what ownership threshold in a subject company must an analyst or entity disclose their holding before publishing?",
     options: {
       A: "Holding of 0.1% or more of securities of the subject company.",
       B: "Holding of 1% or more of securities of the subject company.",
@@ -238,11 +238,11 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Economic Analysis",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "Consider the following statements regarding macroeconomic indicators: I. Fiscal Deficit is the excess of total budget expenditure over total budget receipts excluding borrowings. II. An inverted yield curve (where short-term bond yields exceed long-term yields) has historically been an indicator of economic slowdown or recessionary expectations. III. The Reserve Bank of India primarily utilizes the Wholesale Price Index (WPI) as its headline inflation anchor for monetary policy targets. Which of the statements given above are correct?",
+    question: "Evaluate: I. Fiscal Deficit excludes borrowings. II. Inverted yield curve signals recession risk. III. RBI anchors policy to WPI. Which are correct?",
     options: {
-      A: "Statement I is correct, while Statements II and III are incorrect.",
-      B: "Statements II and III are correct, while Statement I is incorrect.",
-      C: "Statements I and II are correct, while Statement III is incorrect.",
+      A: "Statement I is correct; Statements II and III are incorrect.",
+      B: "Statements II and III are correct; Statement I is incorrect.",
+      C: "Statements I and II are correct; Statement III is incorrect.",
       D: "All three statements (I, II, and III) are completely correct."
     },
     correctAnswer: "C",
@@ -261,12 +261,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Corporate Actions",
     difficulty: 4, // Hard
     access: "free",
-    question: "A company announces a 1:1 Bonus Issue. Later that year, another company announces a 2-for-1 Stock Split (sub-division of shares from face value ₹10 to ₹5). What is the critical accounting difference between a Bonus Issue and a Stock Split?",
+    question: "A firm executes a 1:1 Bonus Issue, while another executes a 2-for-1 Stock Split (₹10 to ₹5). What is the key accounting difference?",
     options: {
-      A: "A bonus issue dilutes existing shareholders' proportional equity ownership, whereas a stock split preserves exact ownership percentages.",
-      B: "A stock split requires actual cash outflow from the company's bank accounts, whereas a bonus issue is a non-cash corporate accounting action.",
-      C: "A bonus issue reduces the nominal face value of each share, whereas a stock split increases the nominal face value per share proportionally.",
-      D: "A bonus issue capitalizes accumulated free reserves into paid-up share capital leaving face value unchanged, whereas a stock split sub-divides the face value of shares leaving total reserves unchanged."
+      A: "Bonus issue dilutes existing equity ownership; stock split preserves exact ownership.",
+      B: "Stock split requires cash outflow; bonus issue is a non-cash accounting action.",
+      C: "Bonus issue reduces nominal face value; stock split increases face value proportionally.",
+      D: "Bonus issue capitalizes reserves at constant face value; stock split sub-divides face value."
     },
     correctAnswer: "D",
     explanation: "In a Bonus Issue, the company capitalizes its free reserves or securities premium account into paid-up equity capital. The number of shares increases while the face value per share remains unchanged. In a Stock Split, the existing face value of the share is divided (e.g., from ₹10 to ₹5), increasing the share count while total share capital and free reserves remain completely unchanged on the balance sheet.",
@@ -284,7 +284,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 4, // Hard
     access: "free",
-    question: "Gamma Corporation has a capital structure consisting of 60% Equity and 40% Debt (on market value weights). The company's pretax cost of debt is 9.0%, its marginal corporate tax rate is 25%, and its cost of equity is 15.0%. What is Gamma Corporation's Weighted Average Cost of Capital (WACC)?",
+    question: "Gamma Corp has 60% Equity and 40% Debt. Pre-tax cost of debt is 9.0%, corporate tax is 25%, and cost of equity is 15.0%. What is its WACC?",
     options: {
       A: "11.70%",
       B: "12.60%",
@@ -307,12 +307,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "A classical Head and Shoulders reversal pattern forms at the end of a major bull market. Which of the following conditions represents the textbook confirmation and price target projection rule as covered in the workbook?",
+    question: "In a classical Head and Shoulders top pattern, which condition defines the textbook confirmation and price target projection rule?",
     options: {
-      A: "The pattern is confirmed when the price breaks above the right shoulder peak with expanding volume; the upward target equals the distance between shoulder troughs.",
-      B: "The pattern is confirmed when the price closes decisively below the neckline on expanding volume; the downward target equals the vertical head-to-neckline distance projected downward.",
-      C: "The pattern is confirmed when the closing price penetrates below the 200-day moving average; the downward target equals twice the average true range of the pattern.",
-      D: "The pattern is confirmed when trading volume on the right shoulder exceeds volume on the head; the downward target equals the height from the left shoulder to the neckline."
+      A: "Breaks above right shoulder on volume; target equals distance between shoulder troughs.",
+      B: "Closes decisively below neckline on volume; target equals head-to-neckline height projected down.",
+      C: "Closes below 200-day moving average; target equals twice average true range.",
+      D: "Volume on right shoulder exceeds head; target equals left shoulder to neckline."
     },
     correctAnswer: "B",
     explanation: "In technical analysis, a Head and Shoulders top is confirmed only when the closing price penetrates decisively below the neckline (support line connecting the two intervening troughs), preferably accompanied by expanding volume. The minimum price projection target is calculated by measuring the vertical distance from the highest point of the head to the neckline, and projecting that distance downward from the breakout level.",
@@ -330,7 +330,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Governance",
     difficulty: 4, // Hard
     access: "free",
-    question: "Under SEBI (Listing Obligations and Disclosure Requirements) Regulations, if the Chairperson of the Board of Directors of a listed company is a non-executive director but is a promoter of the listed entity or is related to any promoter, what proportion of the Board must comprise Independent Directors?",
+    question: "Under SEBI LODR, if a listed firm's Chairperson is a non-executive promoter or promoter-relative, what proportion of the Board must be Independent Directors?",
     options: {
       A: "At least one-third (33.3%) of the Board",
       B: "At least two-thirds (66.7%) of the Board",
@@ -353,12 +353,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Risk and Return",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "An analyst evaluates two actively managed portfolios, Portfolio X and Portfolio Y. Portfolio X has a higher Treynor ratio than Portfolio Y, but Portfolio Y has a higher Sharpe ratio than Portfolio X. What is the most plausible explanation for this occurrence?",
+    question: "Portfolio X has a higher Treynor ratio than Portfolio Y, but Portfolio Y has a higher Sharpe ratio than Portfolio X. What explains this divergence?",
     options: {
-      A: "Portfolio X carries a negative beta and high cash reserves, whereas Portfolio Y holds high-beta securities that depress its Treynor numerator.",
-      B: "Portfolio Y possesses zero systematic market risk, causing its Treynor denominator to vanish while leaving its total variance unaffected.",
-      C: "Different benchmark risk-free hurdle rates were utilized for calculating the Sharpe ratio and the Treynor ratio across the two portfolios.",
-      D: "Portfolio X carries substantial unsystematic risk from poor diversification, penalizing its Sharpe ratio while leaving its Treynor ratio elevated."
+      A: "Portfolio X has negative beta; Portfolio Y holds high-beta securities.",
+      B: "Portfolio Y has zero systematic market risk, eliminating its Treynor denominator.",
+      C: "Different risk-free hurdle rates were used for the two portfolio calculations.",
+      D: "Portfolio X carries high unsystematic risk from poor diversification, penalizing Sharpe."
     },
     correctAnswer: "D",
     explanation: "Sharpe Ratio divides excess return by Total Risk (Standard Deviation: σ), which captures both systematic and unsystematic risk. Treynor Ratio divides excess return by Systematic Risk (Beta: β). If a portfolio is poorly diversified, it carries high unique/unsystematic risk; this inflates the standard deviation (lowering Sharpe ratio) while having no impact on Beta (keeping Treynor ratio high).",
@@ -376,12 +376,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Commodities",
     difficulty: 4, // Hard
     access: "free",
-    question: "In commodity futures markets, when the futures price of a physical commodity trades at a discount to the current spot price (Futures Price < Spot Price), the market condition is described as:",
+    question: "In commodity futures, when the futures price trades at a discount to the spot price (Futures < Spot), the market condition is described as:",
     options: {
-      A: "Backwardation, driven by high immediate convenience yield or tight near-term physical supply.",
-      B: "Contango, reflecting high cost of carry, financing costs, and physical warehousing charges.",
+      A: "Backwardation, driven by high convenience yield or tight near-term physical supply.",
+      B: "Contango, reflecting high cost of carry, financing costs, and physical storage.",
       C: "Arbitrage equilibrium, reflecting zero physical storage and financing carry costs.",
-      D: "Short Squeeze, requiring mandatory cash settlement on delivery day across all contract expiries."
+      D: "Short Squeeze, requiring mandatory cash settlement on delivery day across expiries."
     },
     correctAnswer: "A",
     explanation: "When futures price is lower than the spot price (an inverted futures curve), the market is in Backwardation (or Normal Backwardation). This occurs when immediate demand for the physical commodity is exceptionally high (high convenience yield) or spot supplies are tight, prompting market participants to pay a premium for immediate physical delivery.",
@@ -399,12 +399,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 3, // Medium
     access: "free",
-    question: "A company trades at a current P/E multiple of 36x. Equity research consensus estimates that the company's earnings will grow at a compound annual rate of 24% over the next 3 to 5 years. What is the company's PEG ratio, and how is it traditionally interpreted?",
+    question: "A company trades at a P/E multiple of 36x with projected EPS growth of 24% CAGR. What is its PEG ratio, and how is it interpreted?",
     options: {
-      A: "PEG = 0.67; the stock is trading at an attractive discount to its anticipated growth rate.",
-      B: "PEG = 1.50; the stock is trading at a premium relative to its anticipated growth rate.",
-      C: "PEG = 1.20; the stock is in exact valuation parity with the broader equity market.",
-      D: "PEG = 8.64; the stock is severely overvalued relative to historical industry norms."
+      A: "PEG = 0.67; the stock trades at an attractive discount to growth.",
+      B: "PEG = 1.50; the stock trades at a premium relative to growth.",
+      C: "PEG = 1.20; the stock is in exact valuation parity with the market.",
+      D: "PEG = 8.64; the stock is severely overvalued relative to historical norms."
     },
     correctAnswer: "B",
     explanation: "The Price/Earnings-to-Growth (PEG) ratio is calculated as: P/E Ratio ÷ Annual EPS Growth Rate (as a percentage). Here: PEG = 36 ÷ 24 = 1.50. A PEG ratio > 1.0 indicates that the stock is trading at a premium relative to its projected earnings growth.",
@@ -422,12 +422,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "The Moving Average Convergence Divergence (MACD) indicator, developed by Gerald Appel, is constructed using which of the following standard formulas?",
+    question: "Under standard settings, what formulas construct the MACD Line and the Signal Line?",
     options: {
-      A: "MACD Line = 20-day SMA minus 50-day SMA; Signal Line = 14-day RSI of the MACD Line.",
-      B: "MACD Line = Current Close minus 14-day Lowest Low; Signal Line = 3-day SMA of MACD.",
-      C: "MACD Line = 12-day EMA minus 26-day EMA; Signal Line = 9-day EMA of the MACD Line.",
-      D: "MACD Line = 50-day EMA minus 200-day EMA; Signal Line = 20-day Volume SMA."
+      A: "MACD Line = 20-day SMA - 50-day SMA; Signal Line = 14-day RSI of MACD.",
+      B: "MACD Line = Close - 14-day Lowest Low; Signal Line = 3-day SMA of MACD.",
+      C: "MACD Line = 12-day EMA - 26-day EMA; Signal Line = 9-day EMA of MACD Line.",
+      D: "MACD Line = 50-day EMA - 200-day EMA; Signal Line = 20-day Volume SMA."
     },
     correctAnswer: "C",
     explanation: "Standard MACD settings use exponential moving averages of closing prices: MACD Line = 12-period EMA - 26-period EMA. The Signal Line is the 9-period EMA of the MACD Line itself. The MACD Histogram plots the difference between the MACD Line and the Signal Line.",
@@ -445,12 +445,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 4, // Hard
     access: "free",
-    question: "Which of the following entities or persons is explicitly EXEMPT from the requirement of registering as a Research Analyst under SEBI (Research Analysts) Regulations, 2014?",
+    question: "Which entity is explicitly EXEMPT from registering as a Research Analyst under SEBI (Research Analysts) Regulations, 2014?",
     options: {
-      A: "An independent professional who offers public stock recommendations on television channels and digital media.",
-      B: "Any individual providing an equity research report to the public for a subscription fee.",
-      C: "A proxy advisory firm providing voting advice to institutional shareholders on listed corporate resolutions.",
-      D: "An investment adviser or merchant banker who issues research reports or makes public appearances solely in connection with their licensed advisory or underwriting activities."
+      A: "An independent professional offering public stock tips on television or digital media.",
+      B: "An individual providing paid equity research reports to public subscribers.",
+      C: "A proxy advisory firm providing voting advice to institutional shareholders.",
+      D: "An investment adviser or merchant banker issuing research solely incidental to licensed activities."
     },
     correctAnswer: "D",
     explanation: "Under Regulation 2(1)(u) of SEBI (Research Analysts) Regulations, 2014, exemptions from registration are provided to: investment advisers, credit rating agencies, portfolio managers, asset management companies, or merchant bankers who issue research reports or make public appearances solely in connection with their licensed primary activities, provided they comply with specific conflict-of-interest guidelines.",
@@ -468,7 +468,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "A company provides the following operating metrics: • Days Sales Outstanding (Debtor Days) = 65 days • Days Sales in Inventory (Inventory Days) = 90 days • Days Payable Outstanding (Creditor Days) = 45 days. If the company's annual Cost of Goods Sold is ₹730 million and annual Revenue is ₹1,000 million (assume a 365-day year), what is its Cash Conversion Cycle (CCC)?",
+    question: "DSO = 65 days, Inventory Days = 90 days, and Payable Days = 45 days. What is the firm's Cash Conversion Cycle (CCC)?",
     options: {
       A: "110 days",
       B: "200 days",
@@ -491,12 +491,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "A candlestick forms with a small real body near the top of the price range, a very long lower shadow (at least twice the height of the real body), and little or no upper shadow. How do technical analysts differentiate between a 'Hammer' and a 'Hanging Man'?",
+    question: "A candle has a small body near the top, a long lower shadow (≥2x body), and minimal upper shadow. How do analysts differentiate a Hammer from a Hanging Man?",
     options: {
-      A: "A Hammer must have a green real body, whereas a Hanging Man must always have a red real body.",
-      B: "A Hammer occurs at the bottom of a downtrend as a bullish reversal pattern, whereas a Hanging Man occurs at the top of an uptrend as a potential bearish reversal pattern.",
-      C: "A Hammer is confirmed only by moving averages, whereas a Hanging Man is confirmed only by trading volume.",
-      D: "A Hammer appears exclusively on weekly charts, whereas a Hanging Man appears exclusively on intraday charts."
+      A: "A Hammer must be green; a Hanging Man must always be red.",
+      B: "A Hammer forms at the bottom of a downtrend (bullish); a Hanging Man forms at the top of an uptrend (bearish).",
+      C: "A Hammer is confirmed only by moving averages; a Hanging Man only by volume.",
+      D: "A Hammer appears only on weekly charts; a Hanging Man only on intraday charts."
     },
     correctAnswer: "B",
     explanation: "Both the Hammer and the Hanging Man share identical visual candlestick geometry: a small real body at the upper end of the trading range with a long lower shadow. The critical difference is the prior trend context: a Hammer forms after an extended downtrend and signals potential bullish reversal (buyers rejected lower prices). A Hanging Man forms after an extended uptrend, signaling that intraday selling emerged.",
@@ -514,7 +514,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "In a Discounted Cash Flow (DCF) model using Free Cash Flow to Firm (FCFF), projected FCFF in terminal year (Year 5) is ₹500 million. The company's WACC is 12.0%, and the expected perpetual terminal growth rate (g) after Year 5 is 4.0%. What is the Terminal Value at the END of Year 5 (prior to discounting back to Year 0)?",
+    question: "In an FCFF DCF model, Year 5 FCFF is ₹500M, WACC is 12.0%, and terminal growth (g) is 4.0%. What is the undiscounted Terminal Value at the END of Year 5?",
     options: {
       A: "₹6,250 million",
       B: "₹4,167 million",
@@ -537,7 +537,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Securities Market",
     difficulty: 3, // Medium
     access: "free",
-    question: "Under SEBI (Issue of Capital and Disclosure Requirements) Regulations, what is the minimum percentage of net offer that must be allocated to Qualified Institutional Buyers (QIBs) in an Initial Public Offering (IPO) made by an issuer that DOES NOT meet the net tangible assets or profitability track record criteria?",
+    question: "Under SEBI ICDR Regulations, what minimum percentage of the net offer must go to QIBs if an IPO issuer DOES NOT meet standard profitability criteria?",
     options: {
       A: "At least 35% of the net offer",
       B: "At least 50% of the net offer",
@@ -560,12 +560,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 4, // Hard
     access: "free",
-    question: "Under SEBI (Research Analysts) Regulations, 2014, which of the following disclosures is MANDATORY in every research report distributed by a research analyst or research entity?",
+    question: "Under SEBI RA Regulations, 2014, which disclosure is MANDATORY in every research report distributed by an analyst or entity?",
     options: {
-      A: "Disclosure of whether the analyst or research entity has received any compensation from the subject company for merchant banking, investment banking, or brokerage services in the previous 12 months.",
-      B: "Disclosure of the names, PAN numbers, and residential addresses of all retail clients who subscribed to the research report.",
-      C: "Disclosure of the exact proprietary trading algorithms and quantitative source code utilized by the firm's trading desk.",
-      D: "Disclosure of the complete personal tax return and personal bank account statement of the research analyst."
+      A: "Receipt of compensation from subject company for banking or broking in past 12 months.",
+      B: "Names, PANs, and residential addresses of all report subscribers.",
+      C: "Proprietary trading algorithms and quantitative source code used by the trading desk.",
+      D: "Personal tax returns and private bank account statements of the research analyst."
     },
     correctAnswer: "A",
     explanation: "Under Regulation 19 of SEBI (Research Analysts) Regulations, 2014: Research analysts and research entities must disclose whether they or their associates received any compensation from the subject company for investment banking, merchant banking, or brokerage services, or for products/services other than investment banking, in the previous twelve months.",
@@ -583,12 +583,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "A stock has tested a major horizontal resistance level at ₹1,200 four times over the past year. On the fifth attempt, it breaks out decisively to ₹1,275 on triple the average daily volume. Two weeks later, the stock pulls back to ₹1,200. According to the principle of role reversal in technical analysis, how is the ₹1,200 level expected to behave during this pullback?",
+    question: "A stock breaks horizontal resistance at ₹1,200 on heavy volume and pulls back to ₹1,200. Under role reversal, how is the ₹1,200 level expected to behave?",
     options: {
-      A: "It will act as an even stronger resistance level causing an immediate resumption of the downtrend.",
-      B: "It is expected to act as new support, where previous sellers and breakout buyers step in to defend the price.",
-      C: "It becomes completely irrelevant once broken, offering no psychological or technical price reference.",
-      D: "It triggers an immediate continuation sell signal under Dow Theory regardless of market conditions."
+      A: "It will act as stronger resistance, resuming the prior downtrend.",
+      B: "It is expected to act as new support defended by buyers.",
+      C: "It becomes completely irrelevant once broken.",
+      D: "It triggers an immediate continuation sell signal under Dow Theory."
     },
     correctAnswer: "B",
     explanation: "One of the fundamental tenets of technical analysis is 'Role Reversal' (polarity principle): once a well-established resistance level is broken decisively to the upside, it flips and becomes a support level on subsequent pullbacks. Traders who sold at resistance or missed the breakout view the retest as an attractive entry point.",
@@ -606,12 +606,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Debt Markets",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "A 5-year government bond with an 8% annual coupon currently has a Macaulay Duration of 4.2 years and a Yield to Maturity (YTM) of 8.0%. What is the bond's Modified Duration, and what is its estimated percentage price change if interest rates across the yield curve increase by 50 basis points (+0.50%)?",
+    question: "A 5-year bond has Macaulay Duration of 4.2 years and YTM of 8.0%. What is its Modified Duration and estimated price change if yields rise by 50 bps (+0.50%)?",
     options: {
-      A: "Modified Duration = 4.20 years; Price decreases by approximately 2.10%",
-      B: "Modified Duration = 3.89 years; Price increases by approximately 1.94%",
-      C: "Modified Duration = 3.89 years; Price decreases by approximately 1.94%",
-      D: "Modified Duration = 4.54 years; Price decreases by approximately 2.27%"
+      A: "Modified Duration = 4.20 years; Price drops by ~2.10%",
+      B: "Modified Duration = 3.89 years; Price rises by ~1.94%",
+      C: "Modified Duration = 3.89 years; Price drops by ~1.94%",
+      D: "Modified Duration = 4.54 years; Price drops by ~2.27%"
     },
     correctAnswer: "C",
     explanation: "Modified Duration = Macaulay Duration ÷ [1 + (YTM ÷ compounding frequency)]. Here: Modified Duration = 4.2 ÷ (1 + 0.08) = 4.2 ÷ 1.08 ≈ 3.8889 years (approx 3.89 years). Estimated percentage change in bond price = -Modified Duration × ΔYield = -3.8889 × (+0.0050) = -1.944% (approx -1.94% decrease).",
@@ -629,7 +629,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "A firm has Annual Revenue of ₹2,500 million, Operating Expenses (excluding depreciation) of ₹1,800 million, Depreciation and Amortization of ₹200 million, Annual Interest Expense of ₹100 million, and a Corporate Tax rate of 25%. What is the firm's Interest Coverage Ratio?",
+    question: "Revenue is ₹2,500M, Opex (excl depr) is ₹1,800M, Depreciation is ₹200M, and Interest is ₹100M. What is the Interest Coverage Ratio?",
     options: {
       A: "7.0x",
       B: "3.75x",
@@ -652,12 +652,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "Bollinger Bands consist of a middle band and two outer bands. How are these bands constructed, and what does a prolonged 'Band Squeeze' signify?",
+    question: "How are standard Bollinger Bands constructed, and what does a prolonged 'Band Squeeze' signify?",
     options: {
-      A: "Middle band is a 20-day SMA, outer bands are placed 2 standard deviations above and below the SMA; a squeeze reflects historically low volatility and often precedes an explosive breakout.",
-      B: "Middle band is a 20-day EMA, outer bands are ±10% fixed percentages; a squeeze indicates mandatory market closure due to circuit breakers.",
-      C: "Middle band is the VWAP, outer bands represent daily high and low; a squeeze indicates an immediate reversal of the primary trend.",
-      D: "Middle band is the 50-day SMA, outer bands are 3 Average True Range (ATR) multiples; a squeeze indicates exceptionally high liquidity."
+      A: "20-day SMA with ±2 standard deviation bands; squeeze reflects low volatility preceding a breakout.",
+      B: "20-day EMA with ±10% envelopes; squeeze indicates circuit breaker closure.",
+      C: "Intraday VWAP with daily high/low bands; squeeze indicates trend reversal.",
+      D: "50-day SMA with ±3 ATR bands; squeeze indicates exceptionally high liquidity."
     },
     correctAnswer: "A",
     explanation: "John Bollinger developed Bollinger Bands using a 20-period Simple Moving Average (SMA) as the centerline, with outer bands set at 2 standard deviations above and below the centerline. A 'Squeeze' occurs when the bands contract tightly together, indicating that volatility has dropped to historic lows. Because volatility is cyclical, squeezes frequently precede powerful directional breakouts.",
@@ -675,12 +675,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 4, // Hard
     access: "free",
-    question: "Under SEBI regulations and international best practices, what is the primary purpose of maintaining an internal 'Chinese Wall' within a full-service securities firm or investment bank?",
+    question: "Under SEBI regulations and global practice, what is the primary purpose of an internal 'Chinese Wall' in a securities firm?",
     options: {
-      A: "To prevent international institutional investors from purchasing domestic equity shares without prior central bank approval.",
-      B: "To isolate the Research Department from Investment Banking, Merchant Banking, and Sales/Trading divisions to prevent conflicts of interest and unauthorized flow of Material Non-Public Information (MNPI).",
-      C: "To physically restrict foreign equity research analysts from accessing local exchange trading terminals.",
-      D: "To ensure that proprietary trading algorithms are kept hidden from retail broking clients and corporate promoters."
+      A: "Prevent foreign institutional investors from acquiring equities without central bank approval.",
+      B: "Isolate Research from Investment Banking and Trading to prevent conflicts and MNPI leaks.",
+      C: "Physically restrict foreign equity analysts from accessing local trading terminals.",
+      D: "Keep proprietary quantitative trading algorithms hidden from retail clients."
     },
     correctAnswer: "B",
     explanation: "A 'Chinese Wall' is an information barrier erected between corporate advisory/investment banking teams (who routinely possess material non-public price-sensitive information) and public-side divisions such as equity research and trading. Its primary statutory purpose is to prevent insider trading, eliminate conflicts of interest, and protect the objectivity and independence of research reports.",
@@ -698,7 +698,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Fundamentals of Research",
     difficulty: 3, // Medium
     access: "free",
-    question: "An equity research analyst begins by analyzing global macroeconomic trends, interest rate trajectories, and domestic GDP growth, then identifies defensive sectors positioned to outperform, and finally selects specific companies within those sectors with superior market share. This investment research methodology is known as:",
+    question: "An analyst evaluates global macro trends, picks defensive sectors poised to outperform, and selects leading firms within those sectors. This research approach is:",
     options: {
       A: "Bottom-up fundamental approach",
       B: "Quantitative mean-reversion approach",
@@ -721,7 +721,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Risk and Return",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "A mutual fund delivers an annualized return of 18.0% with a portfolio beta of 1.25. Over the same evaluation period, the risk-free rate is 6.0% and the market index return is 14.0%. What is the portfolio's Jensen's Alpha?",
+    question: "A fund delivers 18.0% return with beta of 1.25. The risk-free rate is 6.0% and market return is 14.0%. What is its Jensen's Alpha?",
     options: {
       A: "+4.00%",
       B: "-1.50%",
@@ -744,7 +744,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Industry Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "In which stage of the Industry Life Cycle do industry sales continue to grow but at a decelerating rate, product differentiation begins to diminish, price competition intensifies, and industry consolidation through mergers and acquisitions typically peaks?",
+    question: "In which Industry Life Cycle stage does sales growth decelerate, product differentiation diminish, price competition intensify, and M&A consolidation peak?",
     options: {
       A: "Maturity / Shakeout stage",
       B: "Pioneering / Embryonic stage",
@@ -767,7 +767,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 4, // Hard
     access: "free",
-    question: "Delta Ltd paid a dividend of ₹12 per share yesterday (D0 = ₹12). The company's dividends are projected to grow indefinitely at a constant rate of 6% per annum. If an investor's required rate of return is 11%, what is the intrinsic value of the share today using the Gordon Growth Model?",
+    question: "Delta Ltd paid dividend D0 = ₹12, growing perpetually at 6% annually. If required return is 11%, what is intrinsic value under Gordon Growth Model?",
     options: {
       A: "₹240.00",
       B: "₹254.40",
@@ -790,12 +790,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "Which of the following is NOT one of the foundational tenets of Dow Theory?",
+    question: "Which of the following is NOT a foundational tenet of Dow Theory?",
     options: {
-      A: "The market averages discount everything (all known news, sentiment, and expectations are reflected in price).",
-      B: "The market exhibits three distinct trends: primary (major), secondary (intermediate corrections), and minor (day-to-day fluctuations).",
-      C: "A trend reversal is automatically confirmed whenever a minor daily swing violates the previous day's high or low.",
-      D: "Volume must confirm the trend (volume should expand in the direction of the primary trend and contract during counter-trend pullbacks)."
+      A: "The market averages discount everything.",
+      B: "The market exhibits primary, secondary, and minor trends.",
+      C: "A trend reversal is confirmed whenever a minor daily swing violates the prior day's extreme.",
+      D: "Volume must confirm the trend direction."
     },
     correctAnswer: "C",
     explanation: "Dow Theory explicitly holds that minor daily fluctuations are meaningless 'noise' that cannot confirm a trend reversal. Reversals in the primary trend require confirmation across both the Industrial and Transportation averages breaking past significant intermediate (secondary) swing peaks or troughs, validated by expanding volume.",
@@ -813,7 +813,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 4, // Hard
     access: "free",
-    question: "According to Regulation 25 of SEBI (Research Analysts) Regulations, 2014, for how long must a research analyst or research entity maintain and preserve records of research reports, recommendations, research rationale, and compliance documents?",
+    question: "Under Regulation 25 of SEBI RA Regulations, 2014, for what minimum period must an analyst or entity maintain and preserve research records?",
     options: {
       A: "A minimum period of 3 years",
       B: "A minimum period of 10 years",
@@ -836,7 +836,7 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 5, // Very Hard
     access: "free",
-    question: "A manufacturing company has a Degree of Operating Leverage (DOL) of 3.0 and a Degree of Financial Leverage (DFL) of 1.5. If the company experiences a 10% increase in sales revenue, what is the expected percentage increase in its Earnings Per Share (EPS)?",
+    question: "A company has Degree of Operating Leverage (DOL) = 3.0 and Degree of Financial Leverage (DFL) = 1.5. If sales increase 10%, what is the expected EPS increase?",
     options: {
       A: "45%",
       B: "30%",
@@ -859,12 +859,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Profession Overview",
     difficulty: 3, // Medium
     access: "free",
-    question: "Which of the following descriptions accurately contrasts the primary mandate of a Sell-Side research analyst with that of a Buy-Side research analyst?",
+    question: "Which statement accurately contrasts the primary mandate of a Sell-Side research analyst with that of a Buy-Side research analyst?",
     options: {
-      A: "Sell-side analysts manage asset management portfolios directly, whereas buy-side analysts publish external reports to generate trade commissions.",
-      B: "Sell-side analysts publish reports distributed to institutional and retail brokerage clients to facilitate trading, whereas buy-side analysts work for asset managers evaluating ideas exclusively for internal portfolio allocation.",
-      C: "Sell-side analysts focus exclusively on fixed-income instruments, whereas buy-side analysts focus exclusively on listed equities.",
-      D: "Sell-side analysts are exempt from SEBI statutory regulations, whereas buy-side analysts are subject to licensing requirements."
+      A: "Sell-side analysts manage portfolios; buy-side analysts publish reports for commissions.",
+      B: "Sell-side analysts publish reports to facilitate client trading; buy-side analysts evaluate ideas internally for portfolio managers.",
+      C: "Sell-side analysts cover fixed income exclusively; buy-side analysts cover equities.",
+      D: "Sell-side analysts are exempt from SEBI; buy-side analysts must register."
     },
     correctAnswer: "B",
     explanation: "Sell-side analysts work for brokerage houses and investment banks, publishing research reports that are distributed to clients to generate trade execution, visibility, and commissions. Buy-side analysts work for institutional investors (mutual funds, hedge funds, pension funds, insurance companies) and conduct in-depth research exclusively for their internal portfolio managers to make direct investment decisions.",
@@ -882,11 +882,11 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "free",
-    question: "In technical chart analysis, which of the following characteristics is TRUE regarding a valid Double Top pattern?",
+    question: "In technical chart analysis, which characteristic is TRUE regarding a valid Double Top pattern?",
     options: {
-      A: "The second peak must always be accompanied by significantly higher trading volume than the first peak.",
-      B: "A Double Top is a bullish continuation pattern that confirms the acceleration of the primary uptrend.",
-      C: "The pattern is confirmed only when the price breaks decisively below the intervening trough (neckline) on expanding volume.",
+      A: "The second peak must always print higher volume than the first peak.",
+      B: "A Double Top is a bullish continuation pattern signaling accelerating upside.",
+      C: "The pattern is confirmed only when price breaks decisively below the intervening trough (neckline) on volume.",
       D: "The time elapsed between the two peaks should ideally be no more than two trading sessions."
     },
     correctAnswer: "C",
@@ -905,12 +905,12 @@ export const FREE_QUESTIONS: Question[] = [
     category: "Governance",
     difficulty: 4, // Hard
     access: "free",
-    question: "Under the Companies Act, 2013 and SEBI LODR Regulations, which of the following safeguards is legally required for approval of 'Material Related Party Transactions' (RPTs) in a listed company?",
+    question: "Under SEBI LODR and the Companies Act, 2013, which safeguard is legally required to approve Material Related Party Transactions (RPTs)?",
     options: {
       A: "Approval only by the Chief Financial Officer and statutory auditor without board oversight.",
-      B: "Approval by a simple majority of executive directors without requiring Audit Committee review.",
-      C: "No approval is required if the transaction is valued at less than 50% of the company's annual turnover.",
-      D: "Prior approval of the Audit Committee (with only independent directors voting) and approval by shareholders via resolution where related parties cannot vote in favor."
+      B: "Approval by a simple majority of executive directors without Audit Committee review.",
+      C: "No approval required if the transaction is valued at less than 50% of annual turnover.",
+      D: "Prior approval of Audit Committee (independent directors only) and shareholder approval with related parties abstaining from voting in favor."
     },
     correctAnswer: "D",
     explanation: "Under Regulation 23 of SEBI LODR Regulations and Section 188 of Companies Act, 2013: All related party transactions require prior approval of the Audit Committee (where only independent directors who are members of the audit committee can vote). Furthermore, all Material Related Party Transactions require approval of the shareholders through a resolution, and no related party can vote in favor of such resolution.",

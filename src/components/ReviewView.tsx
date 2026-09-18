@@ -153,7 +153,7 @@ export const ReviewView: React.FC<ReviewViewProps> = ({
                     <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">
                       Question
                     </div>
-                    <p className="text-base sm:text-lg text-slate-900 font-semibold leading-relaxed break-words">
+                    <p className="text-base sm:text-lg text-slate-900 font-semibold leading-snug break-words">
                       {q.question}
                     </p>
                   </div>

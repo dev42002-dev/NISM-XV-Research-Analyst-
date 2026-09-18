@@ -20,6 +20,8 @@ export const ResultsView: React.FC<ResultsViewProps> = ({
   onOpenUnlockModal,
 }) => {
   const hasIncorrect = result.incorrectCount > 0;
+  const isFreeTest = result.totalQuestions === 40;
+  const showUnlockSection = !isAdvancedUnlocked && isFreeTest;
 
   return (
     <div className="max-w-6xl xl:max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6">
@@ -145,53 +147,80 @@ export const ResultsView: React.FC<ResultsViewProps> = ({
               <span>RETAKE TEST</span>
             </button>
           </div>
-
-          {/* Unlock Section Banner */}
-          {!isAdvancedUnlocked ? (
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50/80 rounded-2xl border border-amber-200 p-4 sm:p-5 text-slate-800 shadow-sm space-y-2">
-              <div className="flex items-center justify-between">
-                <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-2 py-0.5 rounded border border-amber-300">
-                  <Lock className="w-3 h-3" />
-                  ADVANCED 40
-                </span>
-                <span className="text-xs font-semibold text-slate-500">
-                  Questions 41–80
-                </span>
-              </div>
-              <h3 className="text-sm sm:text-base font-bold text-slate-900">
-                Unlock 40 Additional Practice Questions
-              </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Access advanced application questions, financial calculation models, and comprehensive solutions.
-              </p>
-              <button
-                type="button"
-                onClick={onOpenUnlockModal}
-                className="w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition-colors shadow-xs cursor-pointer min-h-[40px] flex items-center justify-center gap-1.5"
-              >
-                <Lock className="w-3.5 h-3.5 text-amber-400" />
-                <span>UNLOCK ADVANCED 40</span>
-              </button>
-            </div>
-          ) : (
-            <div className="bg-emerald-50/80 border border-emerald-200/90 rounded-2xl p-4 text-slate-800 shadow-sm flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <div className="space-y-0.5">
-                <h3 className="text-xs font-bold uppercase text-emerald-900">
-                  ✓ ADVANCED UNLOCKED
-                </h3>
-                <p className="text-xs text-slate-600">
-                  All 80 practice questions are fully accessible for examination simulation.
-                </p>
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Right Column: Performance Analysis per Requirement 7 */}
         <div className="lg:col-span-7 space-y-4">
+          {/* Post-Test Premium Unlock Section immediately below score summary and above Performance Analysis */}
+          {showUnlockSection && (
+            <div
+              id="post-test-unlock-card"
+              className="bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md p-4 sm:p-5 relative overflow-hidden"
+            >
+              {/* Subtle top accent bar: emerald to gold to emerald */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 via-amber-400 to-emerald-500" />
+
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3.5 sm:gap-4">
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 border border-amber-400/20 px-2 py-0.5 rounded-full">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                    <span>NISM Series XV</span>
+                    <span className="text-slate-500">•</span>
+                    <span className="text-emerald-400 font-semibold">Advanced Set</span>
+                  </div>
+                  <h2 className="text-base sm:text-lg font-black text-white tracking-tight">
+                    Ready for the next level?
+                  </h2>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    Get 40 additional NISM Series XV exam-style scenario questions.
+                  </p>
+                </div>
+
+                <div className="shrink-0 pt-0.5 sm:pt-0">
+                  <button
+                    type="button"
+                    id="unlock-advanced-40-btn"
+                    onClick={onOpenUnlockModal}
+                    className="w-full sm:w-auto px-5 py-2.5 sm:py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs sm:text-sm tracking-tight shadow-md hover:shadow-lg transition-all cursor-pointer flex items-center justify-center gap-2 min-h-[42px] sm:min-h-[44px] active:scale-[0.98] whitespace-nowrap"
+                  >
+                    <span>🔓 Unlock Advanced 40</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* When Advanced has been unlocked after completing the free test */}
+          {isAdvancedUnlocked && isFreeTest && (
+            <div 
+              id="post-test-unlocked-status"
+              className="bg-slate-900 border border-emerald-500/30 rounded-2xl p-4 text-slate-200 shadow-sm flex items-center justify-between gap-4 flex-wrap sm:flex-nowrap"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center shrink-0">
+                  <ShieldCheck className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-xs sm:text-sm font-bold uppercase text-emerald-400">
+                    ✓ Advanced 40 Unlocked
+                  </h3>
+                  <p className="text-xs text-slate-400 mt-0.5">
+                    All 80 practice questions are accessible. Retake the test anytime to attempt the full examination bank.
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                id="retake-full-test-btn"
+                onClick={onRetakeTest}
+                className="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-colors shrink-0 cursor-pointer min-h-[36px] flex items-center gap-1.5 whitespace-nowrap"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Retake with 80 Questions</span>
+              </button>
+            </div>
+          )}
+
           <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-sm">
             <div className="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
               <div>

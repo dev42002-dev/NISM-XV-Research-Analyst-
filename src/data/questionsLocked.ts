@@ -8,12 +8,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 4, // Hard
     access: "locked",
-    question: "An equity research analyst models a 10-year Discounted Cash Flow (DCF) for an industrial conglomerate. If the company's Weighted Average Cost of Capital (WACC) increases from 11.0% to 12.5% while cash flow forecasts remain unchanged, what is the expected impact on Enterprise Value?",
+    question: "In a 10-year DCF model, if WACC rises from 11.0% to 12.5% while cash flow forecasts are unchanged, what happens to Enterprise Value?",
     options: {
-      A: "Enterprise Value decreases because future operational cash flows and the terminal value are discounted at a higher hurdle rate.",
-      B: "Enterprise Value increases because a higher cost of capital implies greater perceived risk and higher expected nominal yields.",
-      C: "Enterprise Value remains completely unchanged because WACC only affects the capital structure weights on the balance sheet.",
-      D: "Enterprise Value increases in the near term but decreases beyond the 5-year forecast horizon."
+      A: "Enterprise Value decreases because future cash flows and terminal value are discounted at a higher rate.",
+      B: "Enterprise Value increases because a higher cost of capital implies higher expected yields.",
+      C: "Enterprise Value is unchanged because WACC affects only balance-sheet weights.",
+      D: "Enterprise Value increases in the near term but drops beyond 5 years."
     },
     correctAnswer: "A",
     explanation: "In a Discounted Cash Flow model, Enterprise Value is the sum of the present values of projected future FCFF plus the present value of the terminal value: PV = Σ [FCFF_t / (1 + WACC)^t] + [TV_N / (1 + WACC)^N]. Because WACC resides in the denominator of the present value formula, any increase in the discount rate decreases the present value of each future cash flow and dramatically shrinks the capitalized terminal value.",
@@ -31,12 +31,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "Under the extended 5-stage DuPont framework, Return on Equity (ROE) is decomposed into five specific ratios. Which of the following expressions correctly defines this 5-stage breakdown?",
+    question: "Under the extended 5-stage DuPont framework, which expression correctly defines the decomposition of ROE?",
     options: {
-      A: "(EBIT / Sales) × (Sales / Assets) × (Assets / Equity) × (Net Income / EBIT) × (Gross Profit / Sales)",
+      A: "(EBIT / Sales) × (Sales / Assets) × (Assets / Equity) × (Net Income / EBIT) × (Gross Margin)",
       B: "(Tax Burden) × (Interest Burden) × (EBIT Margin) × (Asset Turnover) × (Financial Leverage)",
-      C: "(Net Income / Sales) × (Sales / Assets) × (Assets / Equity) × (Operating Cash Flow / Net Income) × (Free Cash Flow / Sales)",
-      D: "(Operating Income / Sales) × (Sales / Working Capital) × (Working Capital / Equity) × (Debt / Equity) × (1 - Tax Rate)"
+      C: "(Net Margin) × (Asset Turnover) × (Leverage) × (CFO / Net Income) × (FCF / Sales)",
+      D: "(Operating Margin) × (Sales / Working Capital) × (Working Capital / Equity) × (Debt / Equity) × (1 - Tax Rate)"
     },
     correctAnswer: "B",
     explanation: "The 5-stage DuPont decomposition breaks down ROE into: (1) Tax Burden = Net Income / EBT; (2) Interest Burden = EBT / EBIT; (3) Operating (EBIT) Margin = EBIT / Sales; (4) Asset Turnover = Sales / Total Assets; and (5) Financial Leverage = Total Assets / Shareholders' Equity. Multiplying these five terms cancels intermediate numerators and denominators to yield Net Income / Shareholders' Equity (ROE).",
@@ -54,12 +54,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 3, // Medium
     access: "locked",
-    question: "In technical candlestick analysis, what constitutes a valid 'Bullish Engulfing' pattern at the end of a downtrend?",
+    question: "In technical analysis, what constitutes a valid Bullish Engulfing pattern at the end of a downtrend?",
     options: {
-      A: "A small green candle followed by a large red candle whose real body completely covers the preceding green body.",
-      B: "A doji candle with long upper and lower shadows followed immediately by a shooting star candlestick.",
-      C: "A small red (bearish) candle followed by a large green (bullish) candle whose real body completely engulfs the real body of the first candle.",
-      D: "Three consecutive tall green candles with small shadows making progressively higher highs and higher closes."
+      A: "A small green candle followed by a large red candle engulfing it.",
+      B: "A doji candle with long shadows followed by a shooting star.",
+      C: "A small red (bearish) candle followed by a large green candle completely engulfing its real body.",
+      D: "Three consecutive tall green candles making higher highs and closes."
     },
     correctAnswer: "C",
     explanation: "A Bullish Engulfing pattern is a two-candle reversal pattern that appears after a downtrend. The first candle is a smaller red (bearish) candle representing continuing selling pressure. The second candle opens lower than the first candle's close (reflecting opening pessimism), but powerful buying surges throughout the session, causing the green real body to completely envelop the preceding red candle's real body.",
@@ -77,12 +77,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "Under Regulation 16(3) of the SEBI (Research Analysts) Regulations, 2014, when is a research analyst or research entity permitted to trade in a security contrary to their published recommendation?",
+    question: "Under Regulation 16(3) of SEBI RA Regulations, 2014, when may an analyst trade contrary to their published recommendation?",
     options: {
-      A: "Whenever the benchmark index declines by more than 2% in a single trading session.",
-      B: "If the analyst provides a 24-hour advance written notice on their public website or social media channels.",
-      C: "Only if the trade is executed on an offshore international stock exchange.",
-      D: "Never, except in cases of significant personal financial emergency with prior written approval of the Compliance Officer."
+      A: "Whenever the benchmark index drops over 2% in a single session.",
+      B: "If the analyst posts a 24-hour advance written notice online.",
+      C: "Only if the trade executes on an offshore international exchange.",
+      D: "Only during personal financial emergency with prior written approval from the Compliance Officer."
     },
     correctAnswer: "D",
     explanation: "Under Regulation 16(3) of SEBI (Research Analysts) Regulations, 2014: Research analysts and research entities shall not trade in securities of the subject company contrary to their recommendations given which is consistent with the objective of maintaining research integrity. However, an exception is permitted in situations of significant personal financial emergency, subject to obtaining prior written approval from the Compliance Officer.",
@@ -100,12 +100,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 4, // Hard
     access: "locked",
-    question: "Why do equity research analysts often prefer the Enterprise Value to EBITDA (EV/EBITDA) multiple over the Price to Earnings (P/E) multiple when comparing companies within capital-intensive industries?",
+    question: "Why do analysts often prefer EV/EBITDA over P/E multiples when comparing capital-intensive companies?",
     options: {
-      A: "EV/EBITDA is capital-structure neutral and removes distortions caused by differing debt levels, depreciation policies, and tax rates.",
-      B: "EV/EBITDA guarantees that cyclical commodity companies will never appear overvalued at the peak of an earnings cycle.",
-      C: "P/E ratios cannot be calculated whenever a company issues preferred stock or convertible debt securities.",
-      D: "EBITDA represents the exact liquid cash available to pay dividends to ordinary equity shareholders."
+      A: "EV/EBITDA is capital-structure neutral and removes distortions from debt, depreciation, and taxes.",
+      B: "EV/EBITDA guarantees cyclical stocks never appear overvalued at peak earnings.",
+      C: "P/E ratios cannot be computed when companies have preferred stock or convertible debt.",
+      D: "EBITDA represents liquid cash directly available to distribute as equity dividends."
     },
     correctAnswer: "A",
     explanation: "EV/EBITDA evaluates the total operating enterprise value relative to core operating cash generation before non-operating distortions. Because companies in capital-intensive sectors (power, steel, telecom) may adopt different debt ratios (affecting interest expense), different depreciation schedules (SLM vs WDV), or operate under different tax regimes, EV/EBITDA provides a cleaner operational comparison than P/E.",
@@ -123,7 +123,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 3, // Medium
     access: "locked",
-    question: "In technical analysis, which of the following represents the primary set of key Fibonacci retracement levels derived mathematically from the Fibonacci sequence?",
+    question: "In technical analysis, which represents the standard set of key Fibonacci retracement levels?",
     options: {
       A: "10.0%, 25.0%, 50.0%, 75.0%, and 90.0%",
       B: "23.6%, 38.2%, 50.0%, 61.8%, and 78.6%",
@@ -146,7 +146,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Industry Analysis",
     difficulty: 3, // Medium
     access: "locked",
-    question: "Which of the following industry classifications is considered a classic 'Defensive' sector whose revenues and earnings remain relatively resilient during macroeconomic recessions?",
+    question: "Which industry classification represents a classic 'Defensive' sector resilient during economic downturns?",
     options: {
       A: "Commercial Real Estate and Heavy Construction",
       B: "Automobile Manufacturing and Luxury Consumer Goods",
@@ -169,12 +169,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Risk and Return",
     difficulty: 4, // Hard
     access: "locked",
-    question: "As an investor progressively increases the number of randomly selected, uncorrelated stocks in an equity portfolio from 5 to 35, what happens to the portfolio's total risk?",
+    question: "As an investor increases randomly selected, uncorrelated stocks from 5 to 35, what happens to portfolio risk?",
     options: {
-      A: "Total risk drops to zero because all market fluctuations are eliminated.",
-      B: "Systematic risk is completely eliminated, leaving only firm-specific risk.",
-      C: "Total risk increases because managing more stocks introduces operational and tracking errors.",
-      D: "Unsystematic (company-specific) risk is largely diversified away, leaving primarily non-diversifiable systematic market risk."
+      A: "Total risk drops to zero as all market fluctuations cancel out.",
+      B: "Systematic risk is eliminated, leaving only firm-specific risk.",
+      C: "Total risk increases due to operational and tracking errors.",
+      D: "Unsystematic (firm-specific) risk is largely diversified away, leaving systematic market risk."
     },
     correctAnswer: "D",
     explanation: "Portfolio theory demonstrates that total risk consists of Unsystematic (diversifiable/firm-specific) risk and Systematic (market/macroeconomic) risk. By combining 20 to 30 uncorrelated assets, idiosyncratic firm-specific risks cancel out. However, systematic risk (e.g., inflation, geopolitical events, interest rate shocks) affects the entire market and cannot be eliminated through diversification.",
@@ -192,7 +192,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 3, // Medium
     access: "locked",
-    question: "Company Zenith Ltd reports: Cash & Bank = ₹300m, Marketable Securities = ₹200m, Trade Receivables = ₹500m, Inventories = ₹800m, Prepaid Expenses = ₹100m, and Current Liabilities = ₹1,000m. What are Zenith Ltd's Current Ratio and Quick (Acid-Test) Ratio?",
+    question: "Zenith Ltd reports: Cash=₹300M, Securities=₹200M, Receivables=₹500M, Inventory=₹800M, Prepaids=₹100M, Current Liabilities=₹1,000M. What are its Current and Quick Ratios?",
     options: {
       A: "Current Ratio = 1.90x; Quick Ratio = 1.00x",
       B: "Current Ratio = 1.80x; Quick Ratio = 0.80x",
@@ -215,7 +215,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 4, // Hard
     access: "locked",
-    question: "Under Regulation 8 of the SEBI (Research Analysts) Regulations, 2014, what is the minimum net worth or capital adequacy requirement for a Body Corporate / Company applying for registration as a Research Analyst?",
+    question: "Under Regulation 8 of SEBI RA Regulations, 2014, what is the minimum net worth requirement for a Body Corporate applicant?",
     options: {
       A: "A minimum net worth of ₹5 lakh",
       B: "A minimum net worth of ₹25 lakh",
@@ -238,12 +238,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "locked",
-    question: "A stock has traded inside a horizontal congestion channel between ₹400 and ₹450 for four months. The price closes above ₹450 at ₹454, but daily volume is 40% below its 30-day average. Over the next two days, the price slips back inside the channel to ₹442. This price action is best categorized as a:",
+    question: "A stock breaks above a 4-month channel at ₹450 to ₹454 on 40% below-average volume, then slips back to ₹442. This is categorized as a:",
     options: {
-      A: "Successful breakout confirming an accelerating primary bull trend.",
-      B: "Exhaustion gap signaling the immediate end of a multi-year bear market.",
-      C: "False Breakout (Bull Trap), where lack of institutional volume failed to absorb overhead supply, leading to a quick reversal.",
-      D: "Rounding bottom reversal pattern signaling long-term institutional accumulation."
+      A: "Successful breakout confirming an accelerating bull trend.",
+      B: "Exhaustion gap signaling the end of a multi-year bear market.",
+      C: "False Breakout (Bull Trap) due to lack of institutional volume confirmation.",
+      D: "Rounding bottom reversal pattern signaling accumulation."
     },
     correctAnswer: "C",
     explanation: "A breakout above key resistance that occurs on below-average volume is suspect. Technical analysis dictates that legitimate breakouts require expanding volume to confirm institutional participation. When price pierces resistance on light volume and immediately slips back into the range, it is a classic 'Bull Trap' (false breakout), trapping breakout buyers as sellers re-exert control.",
@@ -261,7 +261,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Corporate Actions",
     difficulty: 4, // Hard
     access: "locked",
-    question: "Under the T+1 settlement cycle prevailing in Indian equity markets, a listed company declares a corporate dividend with a Record Date of Thursday, May 15. What is the Ex-Dividend Date, and by which date must an investor purchase shares to be entitled to receive the dividend?",
+    question: "Under T+1 settlement in India, a listed company declares a dividend with Record Date Thursday, May 15. What is the Ex-Date and last purchase date for dividend entitlement?",
     options: {
       A: "Ex-dividend date is Friday, May 16; shares must be purchased by Friday, May 16.",
       B: "Ex-dividend date is Tuesday, May 13; shares must be purchased by Monday, May 12.",
@@ -284,12 +284,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 3, // Medium
     access: "locked",
-    question: "Why is the Enterprise Value to Sales (EV/Sales) multiple preferred over the Price to Sales (P/Sales) multiple when valuing early-stage or loss-making companies with heavy debt?",
+    question: "Why is EV/Sales preferred over P/Sales when valuing capital-intensive or loss-making companies with heavy debt?",
     options: {
-      A: "EV/Sales matches a firm-wide valuation metric with a firm-wide revenue figure, whereas P/Sales compares an equity-only metric against revenues claimed by all capital providers.",
-      B: "P/Sales ratios are mathematically impossible to compute whenever a company reports negative net profits.",
-      C: "EV/Sales ignores accounts receivable and inventory while P/Sales explicitly includes working capital.",
-      D: "P/Sales ratios are only permitted under Indian GAAP and are prohibited under Ind AS accounting standards."
+      A: "EV/Sales matches a firm-wide valuation metric with firm-wide revenue, avoiding debt distortion.",
+      B: "P/Sales ratios are mathematically impossible to compute when net profits are negative.",
+      C: "EV/Sales ignores receivables and inventory while P/Sales includes working capital.",
+      D: "P/Sales ratios are prohibited under Ind AS accounting standards."
     },
     correctAnswer: "A",
     explanation: "Sales revenue is generated by the entirety of the firm's productive assets, which are funded by both debt holders and equity holders. Comparing Price (Market Cap, an equity-only metric) to Sales creates distortion if one company is funded 90% by debt and another 100% by equity. Enterprise Value includes both debt and equity claims, creating consistency between numerator and denominator.",
@@ -307,12 +307,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "Under Regulation 17(2) of the SEBI (Research Analysts) Regulations, 2014, which of the following rules governs the compensation structure of research analysts employed by a research entity?",
+    question: "Under Regulation 17(2) of SEBI RA Regulations, 2014, which rule governs research analyst compensation?",
     options: {
-      A: "Analyst compensation must be tied directly to the quarterly commission volume generated by institutional sales desks.",
-      B: "Compensation of research analysts must be reviewed and approved annually by a compensation committee, and cannot be based on specific investment banking transactions.",
-      C: "Analysts must be paid exclusively through profit-sharing bonuses derived from proprietary trading desk gains.",
-      D: "SEBI fixes the exact monthly salary scales for all certified research analysts across registered brokerage houses."
+      A: "Analyst compensation must be tied directly to quarterly sales desk trading commissions.",
+      B: "Compensation must be reviewed annually by a committee and cannot link to specific investment banking deals.",
+      C: "Analysts must be paid exclusively through profit bonuses from proprietary trading desks.",
+      D: "SEBI fixes mandatory monthly salary scales for all registered research analysts."
     },
     correctAnswer: "B",
     explanation: "Under Regulation 17(2) of SEBI (Research Analysts) Regulations, 2014: Research entities must ensure that the compensation of research analysts is reviewed and approved annually by a board committee or senior management. Crucially, research analyst compensation cannot be linked directly to specific investment banking, merchant banking, or brokerage transactions.",
@@ -330,12 +330,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Commodities",
     difficulty: 4, // Hard
     access: "locked",
-    question: "Which of the following factors exerts the STRONGEST fundamental influence on the intra-year price seasonality and basis of agricultural commodities compared to non-agricultural industrial metals?",
+    question: "Which factor exerts the STRONGEST fundamental influence on seasonal price patterns of agricultural commodities vs industrial metals?",
     options: {
-      A: "Central bank monetary policy decisions and sovereign debt default swap spreads.",
-      B: "Global automotive manufacturing capex and industrial electrical transmission expansion.",
-      C: "Crop sowing and harvesting cycles, monsoon rainfall distribution, and perishable physical storage constraints.",
-      D: "LME warehouse warrant cancellation rates and cross-border customs tariff disputes."
+      A: "Central bank monetary policy decisions and sovereign CDS spreads.",
+      B: "Global automotive manufacturing capex and grid transmission expansions.",
+      C: "Crop sowing/harvesting cycles, monsoon rainfall distribution, and storage perishability.",
+      D: "LME warehouse warrant cancellation rates and cross-border customs tariffs."
     },
     correctAnswer: "C",
     explanation: "Agricultural commodities (pulses, grains, oilseeds, sugar) are seasonal biological products. Their supply is highly inelastic in the short term, concentrated around harvest windows (Kharif and Rabi in India), subject to weather/monsoon disruptions, and constrained by perishability and warehousing. Industrial metals (copper, aluminum, zinc), by contrast, are extracted continuously year-round and driven primarily by industrial demand cycles.",
@@ -353,12 +353,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "locked",
-    question: "What is the primary mathematical difference between a Simple Moving Average (SMA) and an Exponential Moving Average (EMA) of identical period length (e.g., 20 days)?",
+    question: "What is the primary mathematical difference between a 20-day Simple Moving Average (SMA) and a 20-day Exponential Moving Average (EMA)?",
     options: {
-      A: "SMA uses equal volume weighting, whereas EMA calculates exponential moving standard deviations across rolling periods.",
-      B: "SMA incorporates trailing trading volume, whereas EMA tracks only opening prices without adjusting for volatility.",
-      C: "SMA eliminates older prices after five sessions, whereas EMA retains equal weighting across all historical periods.",
-      D: "SMA weights every observation equally, whereas EMA applies exponential multipliers giving higher weight to recent prices."
+      A: "SMA uses equal volume weighting; EMA tracks rolling standard deviations.",
+      B: "SMA incorporates volume; EMA tracks opening prices without adjusting for volatility.",
+      C: "SMA eliminates older prices after five days; EMA retains equal weighting across all days.",
+      D: "SMA weights all observations equally (1/N); EMA applies exponential weights favoring recent prices."
     },
     correctAnswer: "D",
     explanation: "A Simple Moving Average (SMA) calculates the unweighted arithmetic mean of price over N periods, assigning an identical 1/N weight to every day. An Exponential Moving Average (EMA) applies a smoothing multiplier [2 / (N + 1)], assigning exponentially higher weight to the most recent price data. Consequently, the EMA reacts faster to recent price changes and exhibits less lag than an SMA.",
@@ -376,7 +376,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Debt Markets",
     difficulty: 4, // Hard
     access: "locked",
-    question: "When a corporate bond is traded between two coupon payment dates in the secondary debt market, the buyer pays the seller the 'Dirty Price'. What is the relationship between Clean Price, Accrued Interest, and Dirty Price?",
+    question: "When a bond is traded between coupon dates, what is the exact relationship between Clean Price, Accrued Interest, and Dirty Price?",
     options: {
       A: "Dirty Price = Clean Price + Accrued Interest",
       B: "Dirty Price = Clean Price - Accrued Interest",
@@ -399,7 +399,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 3, // Medium
     access: "locked",
-    question: "A company has Total Assets of ₹5,000 million at the beginning of the year and ₹7,000 million at the end of the year. Its Net Revenue for the year is ₹18,000 million. What is the company's Total Asset Turnover ratio?",
+    question: "A company reports Total Assets of ₹5,000M at year-start and ₹7,000M at year-end, with Annual Net Revenue of ₹18,000M. What is its Asset Turnover?",
     options: {
       A: "3.60x",
       B: "3.00x",
@@ -422,12 +422,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Economic Analysis",
     difficulty: 4, // Hard
     access: "locked",
-    question: "When the Reserve Bank of India (RBI) raises both the Repo Rate and the Cash Reserve Ratio (CRR), what is the intended macroeconomic transmission mechanism?",
+    question: "When the RBI raises both the Repo Rate and the Cash Reserve Ratio (CRR), what is the intended macroeconomic transmission mechanism?",
     options: {
-      A: "To inject primary liquidity into commercial banks, stimulate corporate capex borrowing, and increase aggregate demand.",
-      B: "To lower domestic bond yields, weaken the exchange rate of the Indian Rupee, and accelerate export expansion.",
-      C: "To absorb systemic banking liquidity, elevate borrowing costs across the economy, and cool inflationary pressures.",
-      D: "To reduce commercial bank capital adequacy ratios and expand statutory retail lending quotas."
+      A: "To inject liquidity into commercial banks, stimulating corporate capex borrowing.",
+      B: "To lower domestic bond yields and weaken the Rupee exchange rate.",
+      C: "To drain banking liquidity, raise borrowing costs, and suppress inflation.",
+      D: "To reduce commercial bank capital adequacy ratios and expand retail quotas."
     },
     correctAnswer: "C",
     explanation: "Raising the Repo Rate increases the cost at which banks borrow from the RBI, leading banks to increase lending and deposit rates. Raising the CRR obligates commercial banks to park a higher proportion of their net demand and time liabilities (NDTL) as cash reserves with the RBI, draining loanable liquidity from the banking system. Together, they tighten monetary conditions to rein in inflation.",
@@ -445,12 +445,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "locked",
-    question: "The Fast Stochastic Oscillator compares a security's closing price to its price range over a given time period. In standard configuration (14-period), what do %K and %D represent?",
+    question: "In the standard 14-period Fast Stochastic Oscillator, what do %K and %D represent?",
     options: {
-      A: "%K is the ratio of Volume to Open Interest; %D is the daily price change percentage.",
+      A: "%K is Volume to Open Interest; %D is the daily price change percentage.",
       B: "%K is the 200-day moving average; %D is the 2-standard-deviation envelope.",
       C: "%K is the 12-day EMA minus 26-day EMA; %D is the 9-day signal line.",
-      D: "%K measures where the close sits relative to the 14-day High-Low range; %D is a 3-period moving average of %K."
+      D: "%K measures close relative to the 14-day High-Low range; %D is a 3-period moving average of %K."
     },
     correctAnswer: "D",
     explanation: "Developed by George Lane, the Stochastic Oscillator calculates %K = [(Close - Lowest Low_14) ÷ (Highest High_14 - Lowest Low_14)] × 100. %D is simply a 3-period moving average of %K, serving as the signal line. Crossovers between %K and %D in overbought (>80) or oversold (<20) zones generate trading signals.",
@@ -468,12 +468,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "Under the SEBI (Prohibition of Insider Trading) Regulations, 2015, which of the following scenarios constitutes an illegal transmission or trade based on Unpublished Price Sensitive Information (UPSI)?",
+    question: "Under SEBI (Prohibition of Insider Trading) Regulations, 2015, which scenario constitutes illegal trading on Unpublished Price Sensitive Information (UPSI)?",
     options: {
-      A: "An executive director informs their spouse about an unannounced multi-million-dollar acquisition, and the spouse purchases shares before public disclosure.",
-      B: "An equity research analyst publishes a BUY rating based on publicly available annual reports and channel checks with dealer distributors.",
-      C: "A portfolio manager rebalances mutual fund holdings based on a quantitative statistical arbitrage model using closing tick data.",
-      D: "A listed company holds an earnings call open to all shareholders and analysts simultaneously to discuss published quarterly results."
+      A: "A director discloses an unannounced M&A deal to their spouse, who buys shares before public disclosure.",
+      B: "An analyst publishes a BUY rating based on annual reports and distributor channel checks.",
+      C: "A portfolio manager rebalances holdings via a statistical arbitrage model on closing tick data.",
+      D: "A listed company hosts an open earnings call with all analysts to discuss quarterly results."
     },
     correctAnswer: "A",
     explanation: "Under Regulation 3 and 4 of SEBI (PIT) Regulations, 2015: An insider who possesses Unpublished Price Sensitive Information (UPSI) is strictly prohibited from communicating, providing, or allowing access to UPSI, and no insider shall trade in securities when in possession of UPSI. Communicating unannounced M&A information to family members who trade constitutes illegal insider trading.",
@@ -491,7 +491,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Risk and Return",
     difficulty: 4, // Hard
     access: "locked",
-    question: "A specialized investment asset has a measured Beta (β) of -0.40 relative to the Nifty 50 Index. How will this asset typically perform during a market environment where the Nifty 50 declines by 10%?",
+    question: "An asset has a Beta of -0.40 relative to the Nifty 50. If the Nifty 50 drops by 10%, how is this asset expected to perform?",
     options: {
       A: "It is expected to decline by 4.0%.",
       B: "It is expected to rise by approximately 4.0%.",
@@ -514,7 +514,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 3, // Medium
     access: "locked",
-    question: "A company has a Market Capitalization of ₹15,000 million, Total Debt of ₹4,000 million, Cash & Liquid Equivalents of ₹1,000 million, and reports Annual EBITDA of ₹2,250 million. What is its EV/EBITDA multiple?",
+    question: "A company has Market Cap = ₹15,000M, Debt = ₹4,000M, Cash = ₹1,000M, and EBITDA = ₹2,250M. What is its EV/EBITDA multiple?",
     options: {
       A: "8.89x",
       B: "6.67x",
@@ -537,12 +537,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "locked",
-    question: "In technical pattern analysis, which of the following statements correctly describes the structural formation and trading volume behavior of a valid Symmetrical Triangle?",
+    question: "In technical pattern analysis, which statement correctly describes the formation and volume behavior of a valid Symmetrical Triangle?",
     options: {
-      A: "It features a horizontal upper resistance line and an upward-sloping lower trendline with volume expanding inside the apex.",
-      B: "It is an immediate reversal pattern that signals a bear market regardless of prior trend context.",
-      C: "It features a horizontal lower support line and a downward-sloping upper trendline with static volume.",
-      D: "It consists of converging trendlines (lower highs and higher lows) with volume steadily diminishing as the price approaches the apex, followed by a surge in volume on breakout."
+      A: "Horizontal resistance and rising lower trendline with expanding apex volume.",
+      B: "Immediate reversal pattern signaling a bear market regardless of prior trend context.",
+      C: "Horizontal support and falling upper trendline with static volume.",
+      D: "Converging trendlines (lower highs, higher lows) with volume contracting toward apex, surging on breakout."
     },
     correctAnswer: "D",
     explanation: "A Symmetrical Triangle represents a period of consolidation where neither buyers nor sellers hold clear control, forming lower peaks and higher troughs that converge toward an apex. Trading volume characteristically contracts as the price range narrows toward the apex. A decisive breakout in either direction on expanding volume confirms continuation of the prevailing trend.",
@@ -560,12 +560,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Business Analysis",
     difficulty: 4, // Hard
     access: "locked",
-    question: "Which of the following sources of economic moat provides the STRONGEST protection against pricing erosion caused by new market entrants in consumer platform businesses?",
+    question: "Which source of economic moat provides the STRONGEST protection against pricing erosion from new entrants in consumer platform businesses?",
     options: {
-      A: "Two-sided Network Effects, where the value of the platform to new users scales exponentially as the existing user base expands.",
-      B: "Temporary promotional discounts and heavy equity-funded cash burn to acquire short-term gross merchandise value.",
-      C: "Outsourcing production to low-cost third-party manufacturing facilities available to all competitors.",
-      D: "Maintaining low corporate overhead through the absence of dedicated customer service departments."
+      A: "Two-sided Network Effects, where platform value scales exponentially with user growth.",
+      B: "Promotional discounts and heavy venture-backed cash burn for short-term GMV.",
+      C: "Outsourcing production to low-cost third-party contract manufacturers.",
+      D: "Maintaining low corporate overhead through the absence of customer support."
     },
     correctAnswer: "A",
     explanation: "Network effects occur when a product or service becomes inherently more valuable as more people use it (e.g., payment networks, e-commerce marketplaces, social platforms). In a two-sided network effect, more buyers attract more merchants, and more merchants attract more buyers, creating a formidable self-reinforcing competitive barrier that new entrants cannot replicate simply by spending capital.",
@@ -583,12 +583,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 4, // Hard
     access: "locked",
-    question: "Under Regulation 7 of SEBI (Research Analysts) Regulations, 2014, what is the mandatory professional qualification and certification required for an individual research analyst or research entity's partners/employees engaged in research preparation?",
+    question: "Under Regulation 7 of SEBI RA Regulations, 2014, what is the mandatory qualification/certification for research analysts?",
     options: {
       A: "Any undergraduate degree without any statutory examination or certification requirement.",
-      B: "A post-graduate degree or diploma in finance/business management (or professional qualification like CA/CFA/CS/CWA) AND NISM-Series-XV Research Analyst Certification.",
+      B: "Post-graduate degree in finance/business (or CA/CFA/CS/CWA) AND NISM Series XV certification.",
       C: "Only a valid active trading terminal license from a recognized national stock exchange.",
-      D: "Ten years of proprietary algorithmic equity trading experience without formal academic requirements."
+      D: "Ten years of proprietary algorithmic equity trading without formal academic requirements."
     },
     correctAnswer: "B",
     explanation: "Under Regulation 7 of SEBI (Research Analysts) Regulations, 2014: Research analysts, or partners/employees engaged in research preparation and recommendation, must possess: (i) A professional qualification or post-graduate degree/diploma in finance, accountancy, business management, commerce, economics, capital market, or banking; AND (ii) An active NISM-Series-XV: Research Analyst Certification (valid for 3 years).",
@@ -606,12 +606,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "A company switches its accounting depreciation method from the Written Down Value (WDV) method to the Straight Line Method (SLM) on its manufacturing plant. How will this change typically impact reported Net Income and Cash Flow from Operations (CFO) in the early years of the assets' useful life?",
+    question: "A firm switches depreciation from Written Down Value (WDV) to Straight Line (SLM). How does this affect reported Net Income and CFO in early years?",
     options: {
       A: "Reported Net Income will decline, but Cash Flow from Operations will increase substantially.",
       B: "Both reported Net Income and Cash Flow from Operations will remain identical under accrual rules.",
-      C: "Reported Net Income will be higher under SLM than under WDV, while actual Cash Flow from Operations (before tax effects) remains fundamentally unaffected.",
-      D: "Cash Flow from Operations will turn negative due to accelerated non-cash tax amortization schedules."
+      C: "Reported Net Income is higher under SLM, while operational cash flow (pre-tax) is unchanged.",
+      D: "Cash Flow from Operations will turn negative due to accelerated tax amortization schedules."
     },
     correctAnswer: "C",
     explanation: "Under WDV, depreciation is front-loaded (higher depreciation expense in early years). Under SLM, depreciation is spread evenly across useful life. Switching from WDV to SLM reduces depreciation expense in the initial years, thereby boosting reported Net Income. However, because depreciation is a non-cash expense, operational cash collected from customers and paid to suppliers (CFO before tax) is fundamentally unchanged.",
@@ -631,10 +631,10 @@ export const LOCKED_QUESTIONS: Question[] = [
     access: "locked",
     question: "The Average Directional Index (ADX), developed by J. Welles Wilder, is used by technical analysts primarily to determine:",
     options: {
-      A: "The precise future price target of a stock based on daily volume-weighted average price.",
+      A: "The precise future price target of a stock based on volume-weighted average price.",
       B: "The exact calendar date on which corporate earnings announcements will occur.",
-      C: "Whether a company's shares are held primarily by foreign institutional investors or retail brokers.",
-      D: "The strength of a prevailing price trend regardless of whether the trend is up or down."
+      C: "Whether a company's shares are held primarily by foreign institutions or retail brokers.",
+      D: "The strength and persistence of a price trend, regardless of whether it is up or down."
     },
     correctAnswer: "D",
     explanation: "The ADX indicator measures the strength (velocity and persistence) of a trend on a scale from 0 to 100. Readings above 25 generally indicate a strong, tradeable trend, while readings below 20 indicate a weak, choppy, or non-trending rangebound market. Crucially, ADX is non-directional: it rises whether the underlying price trend is strongly bullish or strongly bearish.",
@@ -652,10 +652,10 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 3, // Medium
     access: "locked",
-    question: "For which sector of the economy is the Price to Book Value (P/B) multiple considered the primary, most reliable valuation metric by research analysts?",
+    question: "For which economic sector is the Price to Book Value (P/B) multiple considered the primary, most reliable valuation metric?",
     options: {
       A: "Commercial Banks and Financial Services Institutions",
-      B: "Pharmaceutical and Biotechnology Companies with heavy R&D expenditure",
+      B: "Pharmaceuticals and Biotechnology with heavy R&D expenditure",
       C: "Software-as-a-Service (SaaS) and Digital Consumer Internet Companies",
       D: "Advertising Agencies and Corporate Strategy Consulting Services"
     },
@@ -675,7 +675,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Risk and Return",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "An equity portfolio achieves an annualized return of 16.5% with an annualized standard deviation (volatility) of 14.0%. The risk-free rate of return during the same period is 6.0%. What is the portfolio's Sharpe Ratio?",
+    question: "A portfolio achieves 16.5% annualized return with 14.0% volatility. The risk-free rate is 6.0%. What is its Sharpe Ratio?",
     options: {
       A: "1.18",
       B: "0.75",
@@ -698,12 +698,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Securities Market",
     difficulty: 4, // Hard
     access: "locked",
-    question: "Under SEBI (ICDR) Regulations, which of the following rules governs 'Anchor Investors' participating in an Indian public offering?",
+    question: "Under SEBI ICDR Regulations, which rule governs Anchor Investors participating in an Indian public offering?",
     options: {
-      A: "Anchor investors bid at any price below the floor price without lock-in obligations or investment minimums.",
-      B: "Anchor investors are retail individuals investing above ₹2 lakh through non-institutional bidding categories.",
-      C: "Anchor investors must apply for at least ₹10 crore from the QIB quota one day prior to issue opening with lock-in.",
-      D: "Anchor investors are sovereign wealth funds authorized to acquire equity via bilateral government treaties."
+      A: "Anchor investors bid below floor price without lock-in obligations or investment minimums.",
+      B: "Anchor investors are retail individuals investing above ₹2 lakh through non-institutional categories.",
+      C: "Anchor investors apply for at least ₹10 crore from QIB quota one day before issue opening with lock-in.",
+      D: "Anchor investors are sovereign wealth funds acquiring equity via bilateral treaties."
     },
     correctAnswer: "C",
     explanation: "Under SEBI ICDR Regulations: Anchor Investors are Qualified Institutional Buyers (QIBs) who apply for a minimum of ₹10 crore in a public issue. Allocation is made on a discretionary basis on the day preceding the public issue opening date. Anchor investors provide confidence to other investors and are subject to mandatory lock-in periods (30 days for 50% and 90 days for the remaining 50%).",
@@ -721,12 +721,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "In technical price analysis, a price gap that occurs after a rapid, extended multi-month bull rally, characterized by euphoric public buying, extreme high volume, and followed within two to three trading sessions by a sharp reversal or gap-down in the opposite direction (forming an Island Reversal), is known as an:",
+    question: "A price gap occurring at the climax of an extended bull rally on euphoric volume, followed quickly by an abrupt reversal, is an:",
     options: {
       A: "Breakaway Gap, signaling a breakout from a base.",
       B: "Runaway Gap, signaling trend acceleration midway.",
       C: "Common Gap, occurring in quiet sideways markets.",
-      D: "Exhaustion Gap, signaling impending termination."
+      D: "Exhaustion Gap, signaling impending trend exhaustion."
     },
     correctAnswer: "D",
     explanation: "An Exhaustion Gap occurs near the very end of an extended trend. Driven by late-stage market euphoria or panic, prices make a dramatic final leap on massive volume. Because smart money has distributed and no fresh buyers remain, the move quickly stalls, and price reverses to fill the gap, often creating an Island Reversal top.",
@@ -744,12 +744,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "Under the SEBI (Research Analysts) Regulations, 2014, when a research entity acts as a manager or underwriter in an Initial Public Offering (IPO), what 'Quiet Period' restriction applies to publishing research reports on that issuer?",
+    question: "Under SEBI RA Regulations, 2014, what quiet period applies to an IPO manager/underwriter before publishing research on that issuer?",
     options: {
-      A: "The entity cannot publish reports or make public appearances regarding the issuer for 25 days from IPO allotment.",
-      B: "The entity cannot publish reports or make public appearances regarding the issuer for 40 days following listing.",
-      C: "The entity must publish reports immediately upon listing to provide public market liquidity and trade clarity.",
-      D: "The entity cannot publish reports or make public appearances regarding the issuer for 3 years following the IPO."
+      A: "25 days from the date of allotment of securities in the IPO.",
+      B: "40 days following listing of the securities on stock exchanges.",
+      C: "No quiet period; reports must be published immediately upon listing.",
+      D: "3 years following the completion of the IPO."
     },
     correctAnswer: "A",
     explanation: "Under Regulation 17(1) of SEBI (Research Analysts) Regulations, 2014: A research analyst or research entity shall not publish or distribute a research report or make a public appearance regarding a subject company for which they have acted as a manager or co-manager in an initial public offering for a period of twenty-five (25) days from the date of allotment of securities in the IPO.",
@@ -767,10 +767,10 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 4, // Hard
     access: "locked",
-    question: "Company Solar Power Ltd and Company Wind Energy Ltd both report an identical 40% EBITDA margin on ₹1,000 crore revenue. However, Solar Power Ltd reports a PAT margin of 18%, whereas Wind Energy Ltd reports a PAT margin of only 4%. What is the most plausible structural balance-sheet reason for this wide divergence in net profitability?",
+    question: "Solar Power Ltd and Wind Energy Ltd both report 40% EBITDA margin. Solar reports 18% PAT margin; Wind reports 4%. What is the most plausible structural reason?",
     options: {
       A: "Wind Energy Ltd operates with zero debt leverage and zero fixed asset depreciation.",
-      B: "Wind Energy Ltd carries significantly higher interest-bearing debt and heavy front-loaded depreciation from capitalized assets compared to Solar Power Ltd.",
+      B: "Wind Energy carries higher debt interest costs and heavy front-loaded asset depreciation.",
       C: "Solar Power Ltd has higher cost of goods sold and vendor procurement expenses.",
       D: "Wind Energy Ltd enjoys lower corporate income tax rates under renewable incentive schemes."
     },
@@ -790,12 +790,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 4, // Hard
     access: "locked",
-    question: "On Balance Volume (OBV), developed by Joseph Granville, is calculated based on which of the following cumulative arithmetic rules?",
+    question: "On Balance Volume (OBV), developed by Joseph Granville, is calculated based on which rule?",
     options: {
-      A: "Today's volume is multiplied by the high-low price range and divided by the 20-day moving average volume.",
-      B: "Cumulative OBV rises only on trading days where trading volume exceeds the 50-day average volume by 20%.",
-      C: "Volume is added on up-close days, subtracted on down-close days, and held unchanged on flat closing days.",
-      D: "Volume is added on green candlestick days and halved when closing prices finish below the opening price."
+      A: "Today's volume is multiplied by price range and divided by 20-day average volume.",
+      B: "Cumulative OBV rises only on days where volume exceeds 50-day average by 20%.",
+      C: "Volume is added on up-close days, subtracted on down-close days, and unchanged on flat days.",
+      D: "Volume is added on green candlestick days and halved on red candlestick days."
     },
     correctAnswer: "C",
     explanation: "On Balance Volume (OBV) is a cumulative momentum indicator that relates volume to price change: (1) If Close_today > Close_yesterday: OBV_today = OBV_yesterday + Volume_today; (2) If Close_today < Close_yesterday: OBV_today = OBV_yesterday - Volume_today; (3) If Close_today == Close_yesterday: OBV_today = OBV_yesterday.",
@@ -813,12 +813,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Valuation",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "A company consistently earns a Return on Capital Employed (ROCE) of 28% while its WACC is 11%. Over the last five years, it reinvested 60% of its operating profits into high-return internal capex projects. According to fundamental valuation theory, this company should trade at:",
+    question: "A company earns 28% ROCE with an 11% WACC and reinvests 60% of profits into internal capex. In fundamental valuation theory, it should trade at:",
     options: {
-      A: "A steep discount to its book value because heavy cash reinvestment depresses near-term dividend distributions.",
-      B: "A negative enterprise value because excessive internal capex commitments drain liquid working capital reserves.",
-      C: "Parity at exactly 1.0x EV to Capital Employed regardless of whether return on capital exceeds cost of capital.",
-      D: "A substantial premium over book value (EV/Capital Employed >> 1.0) as returns significantly exceed cost of capital."
+      A: "A steep discount to book value because heavy reinvestment depresses dividend payouts.",
+      B: "A negative enterprise value because excessive internal capex drains liquid working capital.",
+      C: "Parity at exactly 1.0x EV to Capital Employed regardless of ROCE and WACC spread.",
+      D: "A substantial premium over book value (EV/Capital Employed >> 1.0) because ROCE exceeds WACC."
     },
     correctAnswer: "D",
     explanation: "Economic Value Added (EVA) and corporate finance theory state that firm value is created when ROCE > WACC. When a company can reinvest large portions of its cash at a rate of return (28%) that substantially exceeds its cost of capital (11%), each rupee of reinvested capital generates positive Net Present Value (NPV). Consequently, market valuation accords a high premium multiple over invested capital.",
@@ -836,12 +836,12 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Regulation",
     difficulty: 4, // Hard
     access: "locked",
-    question: "When an independent research analyst appears on television or public digital media to express a recommendation on a listed security, what mandatory disclosure must the analyst make during or alongside that public appearance under SEBI regulations?",
+    question: "When a research analyst appears on television or digital media to recommend a security, what disclosure is mandatory under SEBI rules?",
     options: {
-      A: "The analyst must disclose whether they or their relatives hold a financial interest in the subject security, and any material conflict of interest.",
-      B: "The analyst must disclose their entire lifetime personal net worth and tax filing history.",
-      C: "The analyst must disclose their confidential client trade book and retail subscriber phone numbers.",
-      D: "No disclosures are required for media commentary because public broadcasts are exempt under press freedom laws."
+      A: "Disclose whether they or relatives have financial interest or material conflicts in the company.",
+      B: "Disclose their entire lifetime personal net worth and tax filing history.",
+      C: "Disclose confidential client trade books and retail subscriber contact numbers.",
+      D: "No disclosures are required for media commentary under press freedom laws."
     },
     correctAnswer: "A",
     explanation: "Under Regulation 19(2) of SEBI (Research Analysts) Regulations, 2014: Any research analyst who makes a public appearance on television, radio, or electronic digital media must disclose during such appearance whether they, their associate, or their relative has any financial interest in the subject company, and the nature of such interest, as well as any other material conflict of interest.",
@@ -859,7 +859,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Technical Analysis",
     difficulty: 3, // Medium
     access: "locked",
-    question: "To construct a valid and reliable upward (bullish) trendline in classical technical analysis, an analyst must connect at least:",
+    question: "To construct a valid upward (bullish) trendline in classical technical analysis, an analyst must connect at least:",
     options: {
       A: "Two or more successively lower reaction highs (peaks) across the price chart.",
       B: "Two or more successively higher reaction lows (troughs), with a third test confirming validity.",
@@ -882,7 +882,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Financial Analysis",
     difficulty: 5, // Very Hard
     access: "locked",
-    question: "A company provides the following financial figures for the fiscal year: • Net Income = ₹1,200 million • Non-Cash Depreciation & Amortization = ₹300 million • Capital Expenditures (Capex) = ₹500 million • Investment in Non-Cash Net Working Capital (ΔNWC) = ₹150 million • New Debt Issued = ₹400 million • Debt Repaid = ₹250 million. What is the Free Cash Flow to Equity (FCFE)?",
+    question: "Net Income = ₹1,200M, Depreciation = ₹300M, Capex = ₹500M, ΔNWC = ₹150M, New Debt = ₹400M, Debt Repaid = ₹250M. What is FCFE?",
     options: {
       A: "₹850 million",
       B: "₹1,150 million",
@@ -905,7 +905,7 @@ export const LOCKED_QUESTIONS: Question[] = [
     category: "Risk and Return",
     difficulty: 4, // Hard
     access: "locked",
-    question: "Portfolio Alpha generates an average annualized return of 18.0% with a portfolio beta of 1.20 and a standard deviation of 20.0%. If the risk-free rate is 6.0%, what is Portfolio Alpha's Treynor Ratio?",
+    question: "Portfolio Alpha has annualized return 18.0%, beta 1.20, and volatility 20.0%. If the risk-free rate is 6.0%, what is its Treynor Ratio?",
     options: {
       A: "0.60",
       B: "12.00%",
